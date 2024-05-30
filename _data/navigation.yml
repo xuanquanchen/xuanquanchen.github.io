@@ -15,14 +15,8 @@ main:
   #- title: "Blog Posts"
   #  url: /year-archive/
 
-  - title: "About me"
-    url: /#about
-
   - title: "Publication"
     url: /#publications
-
-  - title: "Patents and Copyrights"
-    url: /#patents and copyrights
 
   - title: "Internships"
     url: /#internships
