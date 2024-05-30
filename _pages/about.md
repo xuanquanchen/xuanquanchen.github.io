@@ -31,14 +31,13 @@ redirect_from:
 </script>
 
 <span id="about"> </span>
-I am a final year undergraduate at [Jinan University (JNU)](https://english.jnu.edu.cn/) and an incoming M.S.E. student in Computer Science at [Johns Hopkins University](https://www.cs.jhu.edu/) (prefer to defer). I am currently seeking RA or internship positions. I am very pleased to be completing my graduation thesis under the supervision of my advisor, [Dr. Lin Cui](https://cuilin.antlab.network).
+I am a final year undergraduate at [Jinan University (JNU)](https://english.jnu.edu.cn/) and an incoming M.S.E. student in Computer Science at [Johns Hopkins University](https://www.cs.jhu.edu/) (prefer to defer). I am very pleased to be completing my graduation thesis under the supervision of my advisor, [Dr. Lin Cui](https://cuilin.antlab.network). **I am currently seeking RA or internship positions.**
 
 <span id="publications">📝 Publications</span>
 ------
 I am currently working on my graduation thesis, which focuses on heavy changer prediction on programmable data planes using machine learning methods. 🥲
 
-<span id="💡 patents and copyrights">
-Patents and Copyrights</span>
+<span id="patents and copyrights">💡 Patents and Copyrights</span>
 ------
 + [2023-09] An image detection method, system and device for adverse weather conditions (Patent No.: ZL 2023 1 0579491.9)
 + [2022-01] Urinary Stone Computer-aided Diagnosis System v1.0 (Copyright registration number: 2022SR0021718)
