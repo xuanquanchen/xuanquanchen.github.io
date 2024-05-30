@@ -5,12 +5,37 @@ redirect_from:
   - /about/
   - /about.html
 ---
+<style>
+  /* Offset for anchor links */
+  :target::before {
+    content: "";
+    display: block;
+    height: 187.5px; /* Adjust this value based on your navbar height */
+    margin-top: -187.5px; /* Adjust this value based on your navbar height */
+    visibility: hidden;
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // Add smooth scrolling to all links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  });
+</script>
+
 <span id="about"> </span>
-I am the final year undergraduate at [Jinan University(JNU)](https://english.jnu.edu.cn) and an incoming M.S.E studnet in computer science at [Johns Hopkins University](https://www.cs.jhu.edu)(prefer to defer). I am currently finding some RA or intern places.
+I am a final year undergraduate at [Jinan University (JNU)](https://english.jnu.edu.cn/) and an incoming M.S.E. student in Computer Science at [Johns Hopkins University](https://www.cs.jhu.edu/) (prefer to defer). I am currently seeking RA or internship positions. I am very pleased to be completing my graduation thesis under the supervision of my advisor, [Dr. Lin Cui](https://cuilin.antlab.network).
 
 <span id="publications">📝 Publications</span>
 ------
-I am currently working on my graduation thesis, it is about heavy changer prediction on programmable data plane using machine learning methods.🥲
+I am currently working on my graduation thesis, which focuses on heavy changer prediction on programmable data planes using machine learning methods. 🥲
 
 <span id="💡 patents and copyrights">
 Patents and Copyrights</span>
@@ -38,7 +63,7 @@ Patents and Copyrights</span>
 
 <span id="personal">⚽️ Personal</span>
 ------
-+ I play tuba in our school's orchestra, besides I am a sparetime football player and fans of manchester city!
-+ I am part-time photographer 📷 and enjoy hiking and camping!
-+ Big fan of Japan culture and the japanese animate, see more in my blog!
-+ Language learner, currently struggling in Japanese 
++ I play tuba in my school's orchestra and am also a spare-time football player and a fan of Manchester City!
++ I am a part-time photographer 📷 and enjoy hiking and camping!
++ I am a big fan of Japanese culture and anime; see more in my [blog](http://www.babara-chongya.ltd/bangumi/)!
++ I am a language learner, currently struggling with Japanese
