@@ -6,7 +6,7 @@ redirect_from:
   - /about.html
 ---
 
-I am the final year undergraduate at [Jinan University(JNU)](https://english.jnu.edu.cn) and an incoming M.S.E studnet in computer science at [Johns Hopkins University](https://www.cs.jhu.edu)(prefer to defer).
+I am the final year undergraduate at [Jinan University(JNU)](https://english.jnu.edu.cn) and an incoming M.S.E studnet in computer science at [Johns Hopkins University](https://www.cs.jhu.edu)(prefer to defer). I am currently finding some RA or intern places.
 
 📝 Publish
 ------
