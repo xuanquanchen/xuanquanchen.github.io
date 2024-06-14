@@ -62,7 +62,7 @@ I am currently working on my graduation thesis, which focuses on heavy changer p
 
 <span id="personal">⚽️ Personal</span>
 ------
-+ I play tuba in my school's orchestra and am also a spare-time football player and a fan of Manchester City!
++ I play tuba in my school's orchestra and am also a spare-time football player and a fan of [Manchester Cit](https://www.mancity.com)!
 + I am a part-time photographer 📷 and enjoy hiking and camping!
-+ I am a big fan of Japanese culture and anime; see more in my [blog](http://www.babara-chongya.ltd/bangumi/)!
-+ I am a language learner, currently struggling with Japanese
++ I am a big fan of Japanese🇯🇵 culture⛩️ and anime(こんにちは👋); see more in my [blog](http://www.babara-chongya.ltd/bangumi/)!
++ I am a language learner, currently struggling with Japanese😢.
