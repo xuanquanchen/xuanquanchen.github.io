@@ -31,7 +31,7 @@ redirect_from:
 </script>
 
 <span id="about"> </span>
-I am a final year undergraduate at [Jinan University (JNU)](https://english.jnu.edu.cn/) and an incoming M.S.E. student in Computer Science at [Johns Hopkins University](https://www.cs.jhu.edu/) (prefer to defer). I am very pleased to be completing my graduation thesis under the supervision of my advisor, [Dr. Lin Cui](https://cuilin.antlab.network). **I am currently seeking RA or internship positions.**
+I am a final year undergraduate at [Jinan University (JNU)](https://english.jnu.edu.cn/) and an incoming M.S.E. student in Computer Science at [Johns Hopkins University (JHU)](https://www.cs.jhu.edu/). I am very pleased to be completing my graduation thesis under the supervision of my advisor, [Dr. Lin Cui](https://cuilin.antlab.network). **I am currently seeking RA or internship positions.**
 
 <span id="publications">📝 Publications</span>
 ------
@@ -56,13 +56,16 @@ I am currently working on my graduation thesis, which focuses on heavy changer p
 
 <span id="education">📖 Education</span>
 ------
-+ [perhaps 2025-08/-] M.S.E. in Computer Science @ [Johns Hopkins University](https://www.jhu.edu)
-+ [2021-09/2024-07] B.S. in Computer Science @ [Jinan University](https://english.jnu.edu.cn)
++ [2024-08/-] M.S.E. in Computer Science @ [Johns Hopkins University](https://www.jhu.edu)
++ [2021-09/2024-07] B.S. in Computer Science (trasfer major)@ [Jinan University](https://english.jnu.edu.cn)
 + [2020-09/2021-07] B.S. in Biotechnology @ [Jinan University](https://english.jnu.edu.cn)
 
 <span id="personal">⚽️ Personal</span>
 ------
-+ I play tuba in my school's orchestra and am also a spare-time football player and a fan of [Manchester Cit](https://www.mancity.com)!
-+ I am a part-time photographer 📷 and enjoy hiking and camping!
-+ I am a big fan of Japanese🇯🇵 culture⛩️ and anime(こんにちは👋); see more in my [blog](http://www.babara-chongya.ltd/bangumi/)!
-+ I am a language learner, currently struggling with Japanese😢.
++ I play tuba in my school's orchestra 🎼 and won some prizes in our province with the orchestra!
++ I am a spare-time football(soccer⚽️) player, mainly a defender, but I dream of playing midfield. I am a huge fan of [Manchester City](https://www.mancity.com) and enjoy analyzing football(soccer⚽️) tactics!
++ I am a part-time photographer 📷(mainly for landscapes). I also enjoy hiking and camping. You can check my photos here!
++ I love Japanese 🇯🇵 culture ⛩️ and [anime](http://www.babara-chongya.ltd/bangumi/), and I can speak a little Japanese (こんにちは👋)!
++ I am a language learner, currently struggling with Japanese😢 and planning to learn French in the future.
++ I enjoy reading (recently on philosophy and psychology) and playing video games(I am trying to make one)!
++ This person is hard to summarize...
