@@ -65,7 +65,7 @@ I am currently working on my graduation thesis, which focuses on heavy changer p
 + I play tuba in my school's orchestra 🎼 and won some prizes in our province with the orchestra!
 + I am a spare-time football(soccer⚽️) player, mainly a defender, but I dream of playing midfield. I am a huge fan of [Manchester City](https://www.mancity.com) and enjoy analyzing football(soccer⚽️) tactics!
 + I am a part-time photographer 📷(mainly for landscapes). I also enjoy hiking and camping. You can check my photos here!
-+ I love Japanese 🇯🇵 culture ⛩️ and [anime](http://www.babara-chongya.ltd/bangumi/), and I can speak a little Japanese (こんにちは👋)!
++ I love Japanese 🇯🇵 culture ⛩️ and [anime](http://www.babara-chongya.ltd/bangumi/), and I can speak a little Japanese (こんにちは👋)! (My profile picture was actually taken at Todaiji Temple in Nara)
 + I am a language learner, currently struggling with Japanese😢 and planning to learn French in the future.
 + I enjoy reading (recently on philosophy and psychology) and playing video games(I am trying to make one)!
 + This person is hard to summarize...
