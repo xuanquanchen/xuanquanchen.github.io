@@ -255,9 +255,6 @@ defaults:
       type: pages
     values:
       layout: single
-      header:
-        overlay_image: "/cover/Japan/Tokyo_3.jpeg"
-        caption: ""
       author_profile: true
   # _teaching
   - scope:
