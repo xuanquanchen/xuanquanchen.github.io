@@ -8,6 +8,10 @@
 
 # Basic Site Settings
 locale                   : "en-US"
+default_lang             : "en"
+languages:
+  - "en"
+  - "zh"
 site_theme               : "default"
 title                    : "Yiming Chen / 木漏れ日 Komorebi 🌿"
 title_separator          : "-"
@@ -26,7 +30,7 @@ author:
   name             : "Yiming Chen (陈奕铭)"
   pronouns         : # example: "she/her"  
   bio              : "M.S.E. student in computer science @ Johns Hopkins University"
-  location         : "Baltimore, MD, United States"
+  location         : "Baltimore, U.S."
   employer         : "Johns Hopkins University"
   uri              : # URL
   email            : "none@example.org" 
@@ -314,6 +318,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
   - jemoji
+  - jekyll-multiple-languages-plugin
 
 # Mimic GitHub Pages with --safe
 whitelist:

@@ -1,0 +1,8 @@
+site:
+  title: "Yiming Chen's Website"
+  description: "First-year CS master's student at Johns Hopkins University. Hope you find something useful here."
+nav:
+  about: "About"
+  posts: "Blog"
+  cv: "CV"
+  contact: "Contact"

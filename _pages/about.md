@@ -1,6 +1,7 @@
 ---
 permalink: /
 title: "Yiming Chen's Website"
+lang: en
 author_profile: true
 redirect_from: 
   - /about/
