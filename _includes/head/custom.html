@@ -19,44 +19,49 @@
 
 <!-- Change Language automatically-->
 <script>
-  function switchLanguage(lang) {
-    let currentPath = window.location.pathname;
-
-    if (!currentPath.startsWith("/")) {
-      currentPath = "/" + currentPath;
-    }
-
-    localStorage.setItem("langSelected", lang);
-
-    if (lang === 'zh') {
-      if (!currentPath.startsWith('/zh')) {
-        window.location.href = '/zh' + currentPath;
-      }
-    } else {
-      if (currentPath.startsWith('/zh')) {
-        window.location.href = currentPath.replace(/^\/zh/, '');
-      } else {
-        window.location.href = '/';
-      }
-    }
-  }
-
-  // 页面加载时，检查 localStorage 是否有语言偏好，并自动跳转
   document.addEventListener("DOMContentLoaded", function () {
-    let savedLang = localStorage.getItem("langSelected");
+    let savedLang = localStorage.getItem("langSelected") || "en"; // 默认英文
     let currentPath = window.location.pathname;
-    
+
+    // 确保路径以 "/" 开头，防止双斜杠 `//`
     if (!currentPath.startsWith("/")) {
       currentPath = "/" + currentPath;
     }
 
+    // **自动跳转到存储的语言版本**
     if (savedLang === "zh" && !currentPath.startsWith("/zh")) {
       window.location.href = "/zh" + currentPath;
     } else if (savedLang === "en" && currentPath.startsWith("/zh")) {
       window.location.href = currentPath.replace(/^\/zh/, "");
     }
   });
+
+  function switchLanguage(lang) {
+    let currentPath = window.location.pathname;
+
+    // 确保路径以 "/" 开头，防止 `//zh`
+    if (!currentPath.startsWith("/")) {
+      currentPath = "/" + currentPath;
+    }
+
+    // **存储语言选择**
+    localStorage.setItem("langSelected", lang);
+
+    // **切换到对应的语言 URL**
+    if (lang === "zh") {
+      if (!currentPath.startsWith("/zh")) {
+        window.location.href = "/zh" + currentPath;
+      }
+    } else { // 选择英文
+      if (currentPath.startsWith("/zh")) {
+        window.location.href = currentPath.replace(/^\/zh/, "");
+      } else {
+        window.location.href = "/";
+      }
+    }
+  }
 </script>
+
 
 
 <!-- end custom head snippets -->
