@@ -1,0 +1,8 @@
+site:
+  title: "陈奕铭的个人网站"
+  description: "约翰霍普金斯大学计算机科学硕士在读，希望你能在这里找到有用的内容。"
+nav:
+  about: "关于"
+  posts: "博客"
+  cv: "简历"
+  contact: "联系方式"

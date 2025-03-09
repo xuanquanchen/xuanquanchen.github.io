@@ -17,4 +17,38 @@
 <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
+<!-- Change Language automatically-->
+<script>
+  function switchLanguage(lang) {
+    let currentPath = window.location.pathname;
+
+    // 记录用户选择的语言到 localStorage
+    localStorage.setItem("langSelected", lang);
+
+    if (lang === 'zh') {
+      if (!currentPath.startsWith('/zh')) {
+        window.location.href = '/zh' + currentPath;
+      }
+    } else {
+      if (currentPath.startsWith('/zh')) {
+        window.location.href = currentPath.replace(/^\/zh/, '');
+      } else {
+        window.location.href = '/';
+      }
+    }
+  }
+
+  // 页面加载时，检查 localStorage 是否有语言偏好，并自动跳转
+  document.addEventListener("DOMContentLoaded", function () {
+    let savedLang = localStorage.getItem("langSelected");
+
+    if (savedLang === "zh" && !window.location.pathname.startsWith('/zh')) {
+      window.location.href = '/zh' + window.location.pathname;
+    } else if (savedLang === "en" && window.location.pathname.startsWith('/zh')) {
+      window.location.href = window.location.pathname.replace(/^\/zh/, '');
+    }
+  });
+</script>
+
+
 <!-- end custom head snippets -->
