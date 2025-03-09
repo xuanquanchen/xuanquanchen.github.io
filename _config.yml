@@ -8,10 +8,8 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-default_lang             : "en"
-languages:
-  - "en"
-  - "zh"
+languages: ["en", "zh"]
+exclude_from_localizations: ["year-archive.html", "images", "assets", "files"]
 site_theme               : "default"
 title                    : "Yiming Chen / 木漏れ日 Komorebi 🌿"
 title_separator          : "-"
@@ -318,7 +316,6 @@ plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
   - jemoji
-  - jekyll-multiple-languages-plugin
 
 # Mimic GitHub Pages with --safe
 whitelist:

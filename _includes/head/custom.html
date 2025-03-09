@@ -19,36 +19,36 @@
 
 <!-- Change Language automatically-->
 <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        var userLang = navigator.language || navigator.userLanguage;
-        userLang = userLang.toLowerCase();
+  function switchLanguage(lang) {
+    let currentPath = window.location.pathname;
 
-        var langMapping = {
-            "zh-cn": "/zh/",
-            "zh-tw": "/zh/",
-            "zh": "/zh/",
-            "en": "/"
-        };
+    // 记录用户选择的语言到 localStorage
+    localStorage.setItem("langSelected", lang);
 
-        //only jump on the main page
-        if (!localStorage.getItem("langSelected") && window.location.pathname === "/") {
-            if (langMapping[userLang]) {
-              window.location.href = langMapping[userLang];
-            }
-        }
-    });
-
-    function switchLanguage() {
-        var currentPath = window.location.pathname;
-        
-        if (currentPath.startsWith("/zh/")) {
-          window.location.href = currentPath.replace("/zh/", "/");
-          localStorage.setItem("langSelected", "en");
-        } else {
-          window.location.href = "/zh" + currentPath;
-          localStorage.setItem("langSelected", "zh");
-        }
+    if (lang === 'zh') {
+      if (!currentPath.startsWith('/zh')) {
+        window.location.href = '/zh' + currentPath;
+      }
+    } else {
+      if (currentPath.startsWith('/zh')) {
+        window.location.href = currentPath.replace(/^\/zh/, '');
+      } else {
+        window.location.href = '/';
+      }
     }
+  }
+
+  // 页面加载时，检查 localStorage 是否有语言偏好，并自动跳转
+  document.addEventListener("DOMContentLoaded", function () {
+    let savedLang = localStorage.getItem("langSelected");
+
+    if (savedLang === "zh" && !window.location.pathname.startsWith('/zh')) {
+      window.location.href = '/zh' + window.location.pathname;
+    } else if (savedLang === "en" && window.location.pathname.startsWith('/zh')) {
+      window.location.href = window.location.pathname.replace(/^\/zh/, '');
+    }
+  });
 </script>
+
 
 <!-- end custom head snippets -->

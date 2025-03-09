@@ -1,4 +1,5 @@
 {% include base_path %}
+{% include head/custom.html %}
 
 <div class="masthead">
   <div class="masthead__inner-wrap">
@@ -15,14 +16,18 @@
             {% endif %}
             <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
           {% endfor %}
-          <li class="masthead__menu-item">
-            <a href="#" onclick="switchLanguage()">English / 中文</a>
-          </li>
+          <li class="masthead__menu-item language-switcher">
+            <a href="javascript:void(0);">
+              🌐 文/A
+            </a>
+            <ul class="dropdown">
+              <li><a href="javascript:void(0);" onclick="switchLanguage('en')">English</a></li>
+              <li><a href="javascript:void(0);" onclick="switchLanguage('zh')">中文</a></li>
+            </ul>
+          </li>          
         </ul>
         <ul class="hidden-links hidden"></ul>
       </nav>
     </div>
   </div>
 </div>
-
-{% include head/custom.html %}
