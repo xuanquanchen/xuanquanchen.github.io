@@ -21,6 +21,7 @@
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     let savedLang = localStorage.getItem("langSelected") || "en"; // 默认英文
+    document.documentElement.lang = savedLang; // 设置 <html lang="zh"> 或 <html lang="en">
     let currentPath = window.location.pathname;
 
     // 确保路径以 "/" 开头，防止双斜杠 `//`
