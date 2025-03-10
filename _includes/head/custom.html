@@ -20,21 +20,8 @@
 <!-- Change Language automatically-->
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    let savedLang = localStorage.getItem("langSelected") || "en"; // 默认英文
-    document.documentElement.lang = savedLang; // 设置 <html lang="zh"> 或 <html lang="en">
-    let currentPath = window.location.pathname;
-
-    // 确保路径以 "/" 开头，防止双斜杠 `//`
-    if (!currentPath.startsWith("/")) {
-      currentPath = "/" + currentPath;
-    }
-
-    // **自动跳转到存储的语言版本**
-    if (savedLang === "zh" && !currentPath.startsWith("/zh")) {
-      window.location.href = "/zh" + currentPath;
-    } else if (savedLang === "en" && currentPath.startsWith("/zh")) {
-      window.location.href = currentPath.replace(/^\/zh/, "");
-    }
+    let savedLang = localStorage.getItem("langSelected"); // 只读取，不默认设定
+    document.documentElement.lang = "en"; // 默认语言始终设为英文
   });
 
   function switchLanguage(lang) {
@@ -45,10 +32,10 @@
       currentPath = "/" + currentPath;
     }
 
-    // **存储语言选择**
+    // **存储用户选择的语言**
     localStorage.setItem("langSelected", lang);
 
-    // **切换到对应的语言 URL**
+    // **点击后进行切换**
     if (lang === "zh") {
       if (!currentPath.startsWith("/zh")) {
         window.location.href = "/zh" + currentPath;
