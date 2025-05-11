@@ -19,37 +19,37 @@
 
 <!-- Change Language automatically-->
 <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    let savedLang = localStorage.getItem("langSelected"); // 只读取，不默认设定
+    document.documentElement.lang = "en"; // 默认语言始终设为英文
+  });
+
   function switchLanguage(lang) {
+    let currentPath = window.location.pathname;
+
+    // 确保路径以 "/" 开头，防止 `//zh`
+    if (!currentPath.startsWith("/")) {
+      currentPath = "/" + currentPath;
+    }
+
+    // **存储用户选择的语言**
     localStorage.setItem("langSelected", lang);
-    let path = window.location.pathname;
+
+    // **点击后进行切换**
     if (lang === "zh") {
-      if (!path.startsWith("/zh")) path = "/zh" + path;
-    } else {
-      if (path.startsWith("/zh")) path = path.replace(/^\/zh/, "");
+      if (!currentPath.startsWith("/zh")) {
+        window.location.href = "/zh" + currentPath;
+      }
+    } else { // 选择英文
+      if (currentPath.startsWith("/zh")) {
+        window.location.href = currentPath.replace(/^\/zh/, "");
+      } else {
+        window.location.href = "/";
+      }
     }
-    window.location.href = "{{ base_path }}" + path;
   }
-  document.addEventListener("DOMContentLoaded", function () {
-    let saved = localStorage.getItem("langSelected");
-    if (saved === "zh" && !window.location.pathname.startsWith("/zh")) {
-      window.location.href = "{{ base_path }}/zh" + window.location.pathname;
-    }
-    if (saved === "en" && window.location.pathname.startsWith("/zh")) {
-      window.location.href = "{{ base_path }}" + window.location.pathname.replace(/^\/zh/, "");
-    }
-  });
-
-  // 页面加载时，检查 localStorage 是否有语言偏好，并自动跳转
-  document.addEventListener("DOMContentLoaded", function () {
-    let savedLang = localStorage.getItem("langSelected");
-
-    if (savedLang === "zh" && !window.location.pathname.startsWith('/zh')) {
-      window.location.href = '/zh' + window.location.pathname;
-    } else if (savedLang === "en" && window.location.pathname.startsWith('/zh')) {
-      window.location.href = window.location.pathname.replace(/^\/zh/, '');
-    }
-  });
 </script>
+
 
 
 <!-- end custom head snippets -->
