@@ -20,23 +20,24 @@
 <!-- Change Language automatically-->
 <script>
   function switchLanguage(lang) {
-    let currentPath = window.location.pathname;
-
-    // 记录用户选择的语言到 localStorage
     localStorage.setItem("langSelected", lang);
-
-    if (lang === 'zh') {
-      if (!currentPath.startsWith('/zh')) {
-        window.location.href = '/zh' + currentPath;
-      }
+    let path = window.location.pathname;
+    if (lang === "zh") {
+      if (!path.startsWith("/zh")) path = "/zh" + path;
     } else {
-      if (currentPath.startsWith('/zh')) {
-        window.location.href = currentPath.replace(/^\/zh/, '');
-      } else {
-        window.location.href = '/';
-      }
+      if (path.startsWith("/zh")) path = path.replace(/^\/zh/, "");
     }
+    window.location.href = "{{ base_path }}" + path;
   }
+  document.addEventListener("DOMContentLoaded", function () {
+    let saved = localStorage.getItem("langSelected");
+    if (saved === "zh" && !window.location.pathname.startsWith("/zh")) {
+      window.location.href = "{{ base_path }}/zh" + window.location.pathname;
+    }
+    if (saved === "en" && window.location.pathname.startsWith("/zh")) {
+      window.location.href = "{{ base_path }}" + window.location.pathname.replace(/^\/zh/, "");
+    }
+  });
 
   // 页面加载时，检查 localStorage 是否有语言偏好，并自动跳转
   document.addEventListener("DOMContentLoaded", function () {

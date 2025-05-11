@@ -1,7 +1,7 @@
 ---
 permalink: /zh/
-title: "陈奕铭的个人网站"
 lang: zh
+title: "陈奕铭的个人网站"
 author_profile: true
 redirect_from: 
   - /zh/about/
