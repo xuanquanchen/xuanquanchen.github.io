@@ -17,14 +17,27 @@
             <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
           {% endfor %}
           <li class="masthead__menu-item language-switcher">
-            <a href="javascript:void(0);">
-              🌐 文/A
-            </a>
+            <!-- 顶部显示的标签 -->
+            <a href="javascript:void(0);" class="language-toggle">🌐 文 / A</a>
+
+            <!-- 下拉菜单 -->
             <ul class="dropdown">
-              <li><a href="javascript:void(0);" onclick="switchLanguage('en')">English</a></li>
-              <li><a href="javascript:void(0);" onclick="switchLanguage('zh')">中文</a></li>
+              <li>
+                <!-- 英文链接：去掉 /zh 前缀 -->
+                <a href="{{ base_path }}{{ page.url | remove_first: '/zh' }}"
+                  {% if page.lang == "zh" %}class="active"{% endif %}>
+                  English
+                </a>
+              </li>
+              <li>
+                <!-- 中文链接：加上 /zh 前缀 -->
+                <a href="{{ base_path }}/zh{{ page.url }}"
+                  {% unless page.lang == "zh" %}class="active"{% endunless %}>
+                  中文
+                </a>
+              </li>
             </ul>
-          </li>          
+          </li>
         </ul>
         <ul class="hidden-links hidden"></ul>
       </nav>
