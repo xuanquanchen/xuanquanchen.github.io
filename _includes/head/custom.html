@@ -1,5 +1,3 @@
-{% include base_path %}
-
 <!-- start custom head snippets -->
 
 <!-- favicon from https://commons.wikimedia.org/wiki/File:OOjs_UI_icon_academic-progressive.svg -->
@@ -8,7 +6,7 @@
 <link rel="icon" type="image/png" href="{{ base_path }}/images/favicon-32x32.png" sizes="32x32"/>
 <link rel="icon" type="image/png" href="{{ base_path }}/images/favicon-192x192.png" sizes="192x192"/>
 <link rel="manifest" href="{{ base_path }}/images/manifest.json"/>
-<link rel="icon" href="/images/favicon.ico"/>
+<link rel="icon" href="{{ base_path }}/images/favicon.ico"/>
 <meta name="theme-color" content="#ffffff"/>
 <link rel="stylesheet" href="{{ base_path }}/assets/css/academicons.css"/>
 
@@ -20,8 +18,16 @@
 <!-- Change Language automatically-->
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    let savedLang = localStorage.getItem("langSelected"); // 只读取，不默认设定
-    document.documentElement.lang = "en"; // 默认语言始终设为英文
+      const saved = localStorage.getItem("langSelected");
+      if (saved === "zh") {
+        document.documentElement.lang = "zh";
+      }
+    //auto jump
+    // if (saved === "zh" && !window.location.pathname.startsWith('/zh')) {
+    //   window.location.href = '{{ base_path }}/zh' + window.location.pathname;
+    // } else if (saved === 'en' && window.location.pathname.startsWith('/zh')) {
+    //   window.location.href = '{{ base_path }}' + window.location.pathname.replace(/^\/zh/, '');
+    // }
   });
 
   function switchLanguage(lang) {
@@ -38,13 +44,13 @@
     // **点击后进行切换**
     if (lang === "zh") {
       if (!currentPath.startsWith("/zh")) {
-        window.location.href = "/zh" + currentPath;
+        window.location.href = "{{ base_path }}/zh" + currentPath;
       }
     } else { // 选择英文
       if (currentPath.startsWith("/zh")) {
-        window.location.href = currentPath.replace(/^\/zh/, "");
+        window.location.href = "{{ base_path }}" + currentPath.replace(/^\/zh/, "");
       } else {
-        window.location.href = "/";
+        window.location.href = "{{ base_path }}/";
       }
     }
   }
