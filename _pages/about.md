@@ -1,6 +1,8 @@
 ---
 permalink: /
 lang: en
+translations:
+  - zh
 title: "Yiming Chen's Website"
 author_profile: true
 redirect_from: 
