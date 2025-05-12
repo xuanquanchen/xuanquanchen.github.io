@@ -1,74 +1,58 @@
 ---
 layout: archive
 title: "CV"
+lang: en
+translations:
+  - zh
 permalink: /cv/
 author_profile: true
 redirect_from:
   - /resume
+  - /cv
 ---
 
 {% include base_path %}
 
-Education
-======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+> **Last updated:** May 11, 2025  
+> Download PDF resume here (please consider the PDF as the definitive version):  
+> [Download the resume (PDF)]({{ base_path }}/files/cv/MLE%20English%20Version.pdf)  
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+## 📖 Education
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
-
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
-
+- **[2024-08 ~ ]** M.S.E. in Computer Science, [Johns Hopkins University](https://www.jhu.edu)
+- **[2021-09 ~ 2024-07]** B.S. in Computer Science (Transfer major), [Jinan University](https://english.jnu.edu.cn)
+- **[2020-09 ~ 2021-07]** B.S. in Biotechnology, [Jinan University](https://english.jnu.edu.cn)
 
 ---
 
-## 📝 Publications
+## 🏗 Project Experience
 
-I'm currently working on my graduation thesis, focusing on **heavy changer prediction on programmable data planes** using machine learning techniques. 🥲
+### Individual Projects
+- **LinkNet34_SPP** (Baltimore, MD, USA; Nov 2024 – Dec 2024)  
+  Integrated an SPP module into LinkNet34, boosting the Dice coefficient by 1.97% on the EndoVis 2017 dataset.
+
+- **CupAxis3D** (Baltimore, MD, USA; Nov 2024 – Dec 2024)  
+  Reconstructed dense tabletop scenes from RGB‑D frames into point clouds with Open3D; fused via pairwise registration and voxel averaging. Performed ROI segmentation and downsampling, generated axis hypotheses using random slicing and ellipse fitting, then selected inliers via clustering.
+
+### Team Project
+- **Sync Trip** (Baltimore, MD, USA; Mar 2025 – May 2025)  
+  - Implemented multi‑user real‑time itinerary synchronization using Firebase with local caching.  
+  - Integrated Google Maps for location search, destination addition, route planning, and departure‑time routing.  
+  - Developed a billing module featuring expense splitting, draft/archive states, and user balance summaries.
+
+---
+
+## 🔬 Research & Group Work
+
+- **Urolithiasis Diagnostic System** (Guangzhou, China; Sep 2021 – Mar 2022)  
+  - Developed the front‑end interface for a form‑based diagnosis system using Vue.js.  
+  - Built a decision‑tree classification model for urolithiasis types in Weka.  
+  *(Copyright reg. 2022SR0021718)*
+
+- **Object Detection in Extreme Weather** (Guangzhou, China; Jul 2022 – Jul 2023)  
+  - Developed a YOLOv7‑based model with significant accuracy improvements.  
+  - Redesigned the adaptive filter module and implemented style‑transfer‑based data augmentation.  
+  *(Patent No. ZL 2023 1 0579491.9)*
 
 ---
 
@@ -93,9 +77,3 @@ I'm currently working on my graduation thesis, focusing on **heavy changer predi
 - **[2021-11]** Third Prize, Wu Yufu Academic Science & Technology Innovation Competition
 
 ---
-
-## 📖 Education
-
-- **[2024-08 ~]** M.S.E. in Computer Science, [Johns Hopkins University](https://www.jhu.edu)
-- **[2021-09 to 2024-07]** B.S. in Computer Science (Transfer major), [Jinan University](https://english.jnu.edu.cn)
-- **[2020-09 to 2021-07]** B.S. in Biotechnology, [Jinan University](https://english.jnu.edu.cn)

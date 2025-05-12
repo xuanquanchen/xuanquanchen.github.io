@@ -1,0 +1,40 @@
+/* 隐藏下拉 */
+.language-switcher .dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;         /* 紧贴父项下边缘 */
+  left: 0;
+  background: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  z-index: 10;
+  list-style: none;
+  margin: 0;
+  padding: 0.2em 0;
+}
+
+/* 悬停展开 */
+.language-switcher:hover .dropdown {
+  display: block;
+}
+
+/* 子项样式 */
+.language-switcher .dropdown li a {
+  display: block;
+  padding: 0.4em 1em;
+  white-space: nowrap;
+}
+
+/* 当前语言高亮（选填） */
+.language-switcher .dropdown li a.active {
+  font-weight: bold;
+  background-color: #f0f0f0;
+}
+
+.language-switcher .dropdown li span.disabled {
+  color: #999;           /* 灰色表示禁用 */
+  cursor: default;       /* 悬停时不显示手型 */
+  pointer-events: none;  /* 完全屏蔽点击事件 */
+  padding: 0.4em 1em;    /* 与链接保持同样的内边距 */
+  display: block;        /* 保持和 a 同样的布局 */
+}
+

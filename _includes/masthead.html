@@ -17,14 +17,30 @@
             <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
           {% endfor %}
           <li class="masthead__menu-item language-switcher">
-            <a href="javascript:void(0);">
-              🌐 文/A
-            </a>
+            <a href="javascript:void(0);" class="language-toggle">🌐 文 / A</a>
             <ul class="dropdown">
-              <li><a href="javascript:void(0);" onclick="switchLanguage('en')">English</a></li>
-              <li><a href="javascript:void(0);" onclick="switchLanguage('zh')">中文</a></li>
+              <!-- English -->
+              {% if page.translations contains "en" %}
+                <li>
+                  {% if page.lang == "zh" %}
+                    <a href="{{ base_path }}{{ page.url | remove_first: '/zh' }}">English</a>
+                  {% else %}
+                    <span class="disabled">English</span>
+                  {% endif %}
+                </li>
+              {% endif %}
+              <!-- Chinese -->
+              {% if page.translations contains "zh" %}
+                <li>
+                  {% if page.lang == "zh" %}
+                    <span class="disabled">中文</span>
+                  {% else %}
+                    <a href="{{ base_path }}/zh{{ page.url }}">中文</a>
+                  {% endif %}
+                </li>
+              {% endif %}
             </ul>
-          </li>          
+          </li>
         </ul>
         <ul class="hidden-links hidden"></ul>
       </nav>
