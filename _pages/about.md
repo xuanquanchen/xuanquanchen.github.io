@@ -18,7 +18,7 @@ For a more detailed overview of my academic and professional background, please 
 
 ## ⚽️ Personal Interests
 
-- ⚽️ I'm an amateur football (soccer) player, mainly playing as a right wing back—but dreaming of defensive midfielder. I’m a big fan of [Manchester City](https://www.mancity.com) and enjoy analyzing football tactics. My favorite players include [Lionel Messi](https://en.wikipedia.org/wiki/Lionel_Messi), [Kevin De Bruyne](https://www.mancity.com/players/kevin-de-bruyne), [Rodri](https://www.mancity.com/players/rodrigo), and [Yui Hasegawa](https://www.mancity.com/players/yui-hasegawa).
+- ⚽️ I'm an amateur football (soccer) player, mainly playing as a left wing back—but dreaming of defensive midfielder. I’m a big fan of [Manchester City](https://www.mancity.com) and enjoy analyzing football tactics. My favorite players include [Lionel Messi](https://en.wikipedia.org/wiki/Lionel_Messi), [Kevin De Bruyne](https://www.mancity.com/players/kevin-de-bruyne), [Rodri](https://www.mancity.com/players/rodrigo), and [Yui Hasegawa](https://www.mancity.com/players/yui-hasegawa).
 - 📷 A part-time photographer who mainly shoots landscapes—I also love hiking and camping. (Check out my photos [here](#))
 - 🎼 I played tuba in my university's orchestra during my undergraduate years, winning regional awards with the team.
 - 📚 I’m passionate about language learning, currently wrestling with Japanese😢 and planning to learn French. I love reading as well (especially philosophy and psychology).
